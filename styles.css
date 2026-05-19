@@ -4,3 +4,8 @@
 
 .search-results{margin-top:20px}.search-hit{width:100%;text-align:left;display:grid;gap:5px;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}.search-hit:hover{background:var(--soft)}.search-hit span{color:var(--muted);font-size:13px;line-height:1.4}[data-theme="dark"] .search-hit{background:#17231f;color:var(--ink)}[data-theme="dark"] .search-hit:hover{background:#22302b}
 [data-theme="dark"] .search button{background:#dff7ee;color:#0f3d32}
+
+/* Layout collision fixes */
+.topbar{flex-wrap:wrap}.search{flex:1 1 360px;min-width:280px}.theme-toggle,.avatar{flex:0 0 auto}.content,.card,.metric,.term,.mini-form{min-width:0}.card,.metric{overflow:hidden}.hero>div{z-index:1}.hero:after{z-index:0;pointer-events:none}.table,.scroll,table{max-width:100%}.course-manager,.planner,.grid{min-width:0}.chip,.row,.head{min-width:0}.chip b,.row b{overflow-wrap:anywhere}.search-results{position:relative;z-index:2}
+@media(max-width:760px){.topbar{align-items:stretch}.search{width:100%;min-width:0}.theme-toggle{width:100%}.avatar{align-self:flex-end}.hero:after{opacity:.12;right:-80px}.auth-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.card{padding:14px}}
+@media(max-width:430px){.search{padding:0 8px}.search button{padding:0 9px}.hero{min-height:420px}.hero:after{display:none}.content{padding:12px}.chip{grid-template-columns:1fr}.chip span{white-space:normal}.tabs{grid-template-columns:1fr}}
