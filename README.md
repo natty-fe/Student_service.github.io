@@ -18,10 +18,24 @@ A browser-based academic advising system for students.
 - Registration and deadline alerts
 - Advisor-style chat using the student's own course plan
 
-## Run
+## Run With Python
+
+```bash
+python server.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+The Python server stores student accounts and course data in `data/students.json`.
+
+## Run Static Version
 
 Open `index.html` in a browser. No installation is required.
 
 ## Notes
 
-This version runs fully on GitHub Pages with no backend. Accounts and course data are stored in the browser's local storage for demo purposes.
+The GitHub Pages version still runs without a backend. In that mode, accounts and course data are stored in the browser's local storage for demo purposes.
