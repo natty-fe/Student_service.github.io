@@ -82,6 +82,7 @@ class AdvisorHandler(SimpleHTTPRequestHandler):
             "registration": "May 28, 2026",
             "transcript": [],
             "plan": [],
+            "customCourses": {},
         }
         students[email] = student
         write_students(students)
@@ -106,6 +107,7 @@ class AdvisorHandler(SimpleHTTPRequestHandler):
             return
         students[email]["transcript"] = data.get("transcript", [])
         students[email]["plan"] = data.get("plan", [])
+        students[email]["customCourses"] = data.get("customCourses", students[email].get("customCourses", {}))
         students[email]["target"] = int(data.get("target") or students[email].get("target", 122))
         students[email]["minGpa"] = float(data.get("minGpa") or students[email].get("minGpa", 2.0))
         write_students(students)
