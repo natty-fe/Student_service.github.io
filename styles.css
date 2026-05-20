@@ -54,6 +54,7 @@
 @media(max-width:420px){.topbar{grid-template-columns:1fr}.theme-toggle,.avatar{justify-self:stretch;width:100%}.avatar{border-radius:8px}.search{height:auto;min-height:42px;gap:8px;flex-wrap:wrap;padding:8px}.search input{flex-basis:100%}.search button{width:100%}}
 .mobile-signout{display:none}
 .recommendation{display:grid;gap:8px}.add-rec{justify-self:start}
+.gpa-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}.gpa-summary div{display:grid;gap:5px;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}.gpa-summary span,.sim-head{font-size:12px;color:var(--muted);font-weight:900}.gpa-summary strong{font-size:24px}.max-field{max-width:260px;margin-bottom:12px}.grade-simulator{display:grid;gap:8px}.sim-head,.sim-row{display:grid;grid-template-columns:minmax(180px,1fr) 80px 150px;gap:10px;align-items:center}.sim-head{padding:0 10px}.sim-row{padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--soft)}.sim-row div{display:grid;gap:3px;min-width:0}.sim-row small{color:var(--muted);overflow-wrap:anywhere}.sim-row select{height:36px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);padding:0 10px}
 @media(max-width:640px){
   .topbar{position:sticky;display:grid;grid-template-columns:1fr auto auto;align-items:center;padding:8px;gap:8px;min-height:0}
   .search{grid-column:1/-1;width:100%;min-width:0;height:40px;min-height:40px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px;padding:5px 6px;flex-wrap:nowrap}
@@ -63,6 +64,7 @@
   .mobile-signout{display:block;background:var(--paper);color:var(--ink);border:1px solid var(--line);font-weight:800}
   [data-theme="dark"] .mobile-signout{background:#dff7ee;color:#0f3d32;border-color:#dff7ee}
   .avatar{display:none}
+  .gpa-summary{grid-template-columns:1fr}.max-field{max-width:none}.sim-head{display:none}.sim-row{grid-template-columns:1fr;gap:8px}.sim-row select{width:100%}
 }
 
 /* Keep load table columns separated */
