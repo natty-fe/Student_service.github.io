@@ -99,3 +99,13 @@ select{appearance:none;-webkit-appearance:none;padding-right:34px!important;back
 .content[data-view="advisor"] .chat{min-height:260px}
 .content[data-view="dashboard"] #overview{margin-top:20px}
 @media(max-width:760px){.content[data-view="advisor"] .chat{min-height:220px}}
+
+/* Attention alerts */
+.alert-item{border-color:#efb0aa;background:#fff7f6}
+.alert-title{align-items:center}
+.alert-heading{display:flex;align-items:center;gap:10px;min-width:0}
+.alert-heading b{overflow-wrap:anywhere}
+.alert-mark{width:26px;height:23px;display:grid;place-items:center;flex:0 0 auto;clip-path:polygon(50% 0,100% 100%,0 100%);background:var(--red);color:#fff;font-size:14px;font-weight:950;line-height:1;padding-top:5px;text-shadow:0 1px 1px rgba(0,0,0,.25)}
+[data-theme="dark"] .alert-item{background:#2a1d1c;border-color:#6f3a35}
+[data-theme="dark"] .alert-mark{background:#ef8b80;color:#180604}
+@media(max-width:520px){.alert-title{align-items:flex-start}.alert-heading{align-items:flex-start}.alert-mark{margin-top:1px}}
